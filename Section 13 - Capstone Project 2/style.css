@@ -3,7 +3,20 @@
 
 
 
+.myself-ctr {
+    width: 200px;    /* Set the width you want */
+    height: 200px;   /* Set the height you want */
+    overflow: hidden; /* Ensure the image doesn't overflow the container */
+    position: absolute;
+}
+
+
 .myself {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    object-position: center;
     border-radius: 90%;
+    /* transform: scale(1.2); */
+    /* overflow: hidden; */
 }
