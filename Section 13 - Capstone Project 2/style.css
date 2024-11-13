@@ -1,5 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&family=Libre+Baskerville:wght@700&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.top-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 200px;
+    background-color: #eac3bf;
+}
+
+.head {
+    font-family: 'Lexend Exa', sans-serif;
+    font-size: 3rem;
+}
+
+.mid-div {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 100px; */
+    background-color: #f3e0dc;
+}
+
 
 
 
@@ -7,7 +38,7 @@
     width: 200px;    /* Set the width you want */
     height: 200px;   /* Set the height you want */
     overflow: hidden; /* Ensure the image doesn't overflow the container */
-    position: absolute;
+    /* position: absolute; */
 }
 
 
@@ -19,4 +50,74 @@
     border-radius: 90%;
     /* transform: scale(1.2); */
     /* overflow: hidden; */
+}
+
+.myself-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.skill-head {
+    padding: 20px;
+    display: flex-inline;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom-div {
+    background-color: #ddf7f1;
+    flex-direction: column;
+    gap: 20px;
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.skill-grid {
+    font-size: 1.2rem;
+    list-style-type: none;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+    grid-template: repeat(7, 1fr) / repeat(2, 1fr);
+}
+
+footer {
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+}
+
+
+.contact-icons {
+    display: flex;
+    gap: 30px;
+}
+
+.contact-icons img {
+    height: 30px;
+    gap: 30px;
+}
+
+.mail-me {
+    background-color: #eac3bf;
+    height: 20px;
+    width: 39px;
+    padding: 5px;
+    border-radius: 10%;
+}
+
+a {
+    text-decoration: none;
+    color: #ac6c5e;
 }
