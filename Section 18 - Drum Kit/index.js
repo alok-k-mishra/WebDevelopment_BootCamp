@@ -13,32 +13,42 @@ for (var i = 0; i < drumButtons; i++) {
     document.querySelectorAll(".drum")[i].addEventListener("click", function() {
         var buttonInnerHTML = this.innerHTML;
 
-        switch (buttonInnerHTML) {
-            case "w":
-                kick.play();
-                break;
-            case "a":
-                crash.play();
-                break;
-            case "s":
-                snare.play();
-                break;
-            case "d":
-                tom1.play();
-                break;
-            case "j":
-                tom2.play();
-                break;
-            case "k":
-                tom3.play();
-                break;
-            case "l":
-                tom4.play();
-                break;
-        
-            default:
-                console.log();
-        }
+        makeSound(buttonInnerHTML);
 
     });
+}
+
+
+document.addEventListener("keydown", function(event) {
+    makeSound(event.key);
+});
+
+
+function makeSound(key) {
+    switch (key) {
+        case "w":
+            kick.play();
+            break;
+        case "a":
+            crash.play();
+            break;
+        case "s":
+            snare.play();
+            break;
+        case "d":
+            tom1.play();
+            break;
+        case "j":
+            tom2.play();
+            break;
+        case "k":
+            tom3.play();
+            break;
+        case "l":
+            tom4.play();
+            break;
+
+        default:
+            console.log();
+    }
 }
